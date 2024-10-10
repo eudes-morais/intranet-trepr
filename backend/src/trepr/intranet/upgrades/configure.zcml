@@ -14,4 +14,19 @@
         />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      profile="trepr.intranet:default"
+      source="1001"
+      destination="1002"
+      >
+    <genericsetup:upgradeDepends
+        title="Fecha a intranet"
+        import_steps="workflow"
+        />
+    <upgradeStep
+        title="Atualiza o permissionamento com o novo workflow"
+        handler=".workflow.atualiza_permissoes"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>
