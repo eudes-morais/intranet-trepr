@@ -1,5 +1,5 @@
 const applyConfig = (config) => {
-  (config.settings = {
+  config.settings = {
     ...config.settings,
     isMultilingual: false,
     supportedLanguages: ['pt-br'],
@@ -18,24 +18,23 @@ const applyConfig = (config) => {
         ratio: 1,
       },
     ],
-  }),
-    (config.blocks.blocksConfig['mapLibreBlock']['tileLayers'] = [
-      {
-        id: 'osm',
-        name: 'OpenStreetMap',
-        type: 'raster',
-        urls: [
-          'https://a.tile.openstreetmap.org/{z}/{x}/{y}.png',
-          'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png',
-          'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        ],
-        tileSize: 256,
-        attribution:
-          '&copy; OpenStreetMap Contributors | Kartendarstellung &copy; OpenTopoMap (CC-BY-SA)',
-        maxzoom: 19,
-      },
-    ]);
-
+  };
+  config.blocks.blocksConfig['mapLibreBlock']['tileLayers'] = [
+    {
+      id: 'osm',
+      name: 'OpenStreetMap',
+      type: 'raster',
+      urls: [
+        'https://a.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      ],
+      tileSize: 256,
+      attribution:
+        '&copy; OpenStreetMap Contributors | Kartendarstellung &copy; OpenTopoMap (CC-BY-SA)',
+      maxzoom: 19,
+    },
+  ];
   return config;
 };
 
