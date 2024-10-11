@@ -1,3 +1,6 @@
+// Views
+import AreaView from './components/Views/AreaView';
+
 const applyConfig = (config) => {
   config.settings = {
     ...config.settings,
@@ -19,6 +22,15 @@ const applyConfig = (config) => {
       },
     ],
   };
+
+  // Views
+  config.views.contentTypesViews = {
+    ...config.views.contentTypesViews,
+    Area: AreaView,
+  };
+
+  // Blocos
+  /// Altera bloco mapLibreBlock
   config.blocks.blocksConfig['mapLibreBlock']['tileLayers'] = [
     {
       id: 'osm',
