@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { getBaseUrl } from '@plone/volto/helpers';
 import { Container } from '@plone/components';
-import ContactInfo from '../ContatctInfo/ContactInfo';
+import ContactInfo from '../ContactInfo/ContactInfo';
 import EnderecoInfo from '../EnderecoInfo/EnderecoInfo';
 import RenderBlocks from '@plone/volto/components/theme/View/RenderBlocks';
 
