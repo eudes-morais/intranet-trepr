@@ -3,10 +3,12 @@
       name="trepr.intranet.vocabulary.estados"
       component=".estados.vocab_estados"
       />
-
   <utility
       name="trepr.intranet.vocabulary.cargos"
       component=".cargos.vocab_cargos"
       />
-
+  <utility
+      name="trepr.intranet.vocabulary.areas"
+      component=".areas.vocab_areas"
+      />
 </configure>
