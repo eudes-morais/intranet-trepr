@@ -19,7 +19,7 @@ class TestVocabCargos:
         "token,title",
         [
             ["servidor", "Servidor"],
-            ["terceiro", "Tercerizado"],
+            ["terceiro", "Terceirizado"],
         ],
     )
     def test_term(self, token, title):
