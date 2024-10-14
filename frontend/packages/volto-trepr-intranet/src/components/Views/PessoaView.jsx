@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '@plone/components';
 import { Image } from '@plone/volto/components';
-import ContatoInfo from '../ContatoInfo/ContatoInfo';
+import ContatoInfo from '../ContactInfo/ContatoInfo';
 import EnderecoInfo from '../EnderecoInfo/EnderecoInfo';
 
 const PessoaView = (props) => {
