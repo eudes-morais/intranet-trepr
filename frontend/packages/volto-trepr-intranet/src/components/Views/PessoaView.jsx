@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '@plone/components';
 import { Image } from '@plone/volto/components';
-import ContatoInfo from '../ContactInfo/ContatoInfo';
+import ContactInfo from '../ContactInfo/ContactInfo';
 import EnderecoInfo from '../EnderecoInfo/EnderecoInfo';
 
 const PessoaView = (props) => {
@@ -26,7 +26,7 @@ const PessoaView = (props) => {
         <p className="documentDescription">{content.description}</p>
       )}
       <EnderecoInfo content={content} />
-      <ContatoInfo content={content} />
+      <ContactInfo content={content} />
     </Container>
   );
 };
