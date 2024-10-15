@@ -4,6 +4,7 @@ import { Container } from '@plone/components';
 import { Image } from '@plone/volto/components';
 import ContactInfo from '../ContactInfo/ContactInfo';
 import EnderecoInfo from '../EnderecoInfo/EnderecoInfo';
+import AreaInfo from '../Summary/AreaInfo';
 
 const PessoaView = (props) => {
   const { content } = props;
@@ -26,6 +27,9 @@ const PessoaView = (props) => {
           {content.cargo.title}
         </span>
       )}
+
+      {content.area && <AreaInfo area={content.area} />}
+
       <h1 className="documentFirstHeading">{content.title}</h1>
       {content.description && (
         <p className="documentDescription">{content.description}</p>
