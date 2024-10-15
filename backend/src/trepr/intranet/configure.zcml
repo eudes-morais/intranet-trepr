@@ -20,5 +20,6 @@
   <include package=".indexers" />
   <include package=".serializers" />
   <include package=".vocabularies" />
+  <include package=".subscribers" />
 
 </configure>
