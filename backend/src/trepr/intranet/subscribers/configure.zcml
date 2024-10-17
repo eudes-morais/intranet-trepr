@@ -12,4 +12,9 @@
       handler=".area.modified"
       />
 
+  <subscriber
+      for="zope.interface.Interface"
+      handler=".debug.debugger"
+      />
+
 </configure>
